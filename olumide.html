@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-
-<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,14 +23,13 @@
     .wrapper {
       padding-top: 10px;
       display: inline-flex;
-
     }
 
     .icon {
       /* Change the icon size here */
       font-size: 2em;
-      /* Change the icons colours here*/
-      color: #7a7a7a
+      /* Change the icons colours here */
+      color: #7a7a7a;
     }
 
     .linkedin:hover {
@@ -51,47 +46,30 @@
       cursor: pointer;
     }
   </style>
-
 </head>
-
 <body>
-
-  <body>
-
-    <div class="wrapper">
-
-      <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="social">
-        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
-      </div>
-      <!-- End linkedin Icon -->
-
-      <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="social">
-        <span class="icon twitter"><i class="fab fa-x-twitter"></i></span>
-      </div>
-      <!-- End twitter Icon -->
-
+  <div class="wrapper">
+    <!-- Start linkedin Icon -->
+    <div id="linkedin" onclick="navigate(this.id)" class="social">
+      <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
     </div>
+    <!-- End linkedin Icon -->
 
+    <!-- Start twitter Icon -->
+    <div id="twitter" onclick="navigate(this.id)" class="social">
+      <span class="icon twitter"><i class="fab fa-x-twitter"></i></span>
+    </div>
+    <!-- End twitter Icon -->
+  </div>
 
-
-
-    <script>
-      function navigate(id) {
-        }
-        else if (id === "linkedin") {
-          window.open("https://ng.linkedin.com/in/olumide-soyombo", '_blank').focus();
-        }
-        else if (id === "twitter") {
-          window.open("https://x.com/otunbasho", '_blank').focus();
-        }
+  <script>
+    function navigate(id) {
+      if (id === "linkedin") {
+        window.open("https://ng.linkedin.com/in/olumide-soyombo", '_blank').focus();
+      } else if (id === "twitter") {
+        window.open("https://x.com/otunbasho", '_blank').focus();
       }
-
-    </script>
-
-
-
-  </body>
-
+    }
+  </script>
+</body>
 </html>
