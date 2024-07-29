@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #7a7a7a
+    }
+
+    .linkedin:hover {
+      color: #0e76a8;
+    }
+
+    .twitter:hover {
+      color: #26a7de;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-x-twitter"></i></span>
+      </div>
+      <!-- End twitter Icon -->
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/in/abechoi", '_blank').focus();
+        }
+        else if (id === "twitter") {
+          window.open("https://x.com/abechoi", '_blank').focus();
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
